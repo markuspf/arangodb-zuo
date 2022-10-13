@@ -13,7 +13,7 @@
             pname = "arangodb-zuo";
             version = "git";
             src = ./.;
-            nativeBuildInputs = [ clang cmake ];
+            nativeBuildInputs = [ clang cmake git fmt ];
             buildPhase = "make -j $NIX_BUILD_CORES";
             installPhase = ''
               make install

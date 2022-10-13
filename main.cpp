@@ -2,7 +2,10 @@
 #include <iostream>
 
 #include "fmt/core.h"
+
+extern "C" {
 #include "zuo/zuo.h"
+}
 
 static zuo_ext_t *random_five(zuo_ext_t *args) { return zuo_ext_integer(5); }
 
