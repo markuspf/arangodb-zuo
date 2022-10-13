@@ -17,3 +17,5 @@ target_link_libraries(arangodb-zuo
   zuo)
 
 add_subdirectory(zuo)
+
+install(TARGETS arangodb-zuo RUNTIME DESTINATION bin)
